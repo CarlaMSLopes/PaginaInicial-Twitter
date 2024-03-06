@@ -1,5 +1,125 @@
-body {
-    background-color: rgb(99, 81, 81);
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root {
+    --cor-primaria: black;
+    --cor-secundaria: white;
+    --cor--terciaria: #1D9BF0;
+    --cor-quartenaria: #4A4E51;
+    --fonte: "DM Sans", sans-serif;
+    
+}
+
+* {
     margin: 0;
     padding: 0;
+    background-color:var(--cor-primaria);
+    /* box-sizing: border-box; */
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    padding-top: 1rem;
+    gap: 2rem;
+    
+}
+
+.header_home {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;  
+    
+    
+}
+
+.twitter-logo_home {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding-left: 5rem;
+
+}
+
+.icons-header {
+    width: 1.5rem;
+    display: flex;
+        
+}
+
+.links_home {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-left: 5rem;
+    
+}
+
+.links-butoes_home {
+    display: flex;
+    gap: 2rem;
+}
+
+#premium-icon {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 0.2rem;
+} 
+
+.buttao-postar_home {
+    width: 14rem;
+    height: 3rem;
+    background-color: var(--cor--terciaria);
+    border-radius: 5rem;
+    border: none;
+    font-family:var(--fonte);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--cor-secundaria);
+
+}
+
+.perfil_home {
+    display: flex;
+    gap: 1rem
+}
+
+.foto-perfil_home {
+    width: 2.5rem; 
+    padding-left: 5rem;
+}
+
+.names-perfil_home {
+    font-family: var(--fonte);
+    font-size: 0.4rem;
+    font-weight: 700;
+    color: var(--cor-secundaria);
+    
+}
+
+.username-perfil_home {
+    color: var(--cor-quartenaria);
+    font-weight: 600;
+}
+
+.icon-opcao {
+    width: 1rem;
+    height: 1rem;
+    margin-top: 0.5rem;
+}
+
+.links-titulos {
+    font-family: var(--fonte);
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: var(--cor-secundaria);
+    text-decoration: none;
+}
+ 
+.initial-page-link_home {
+    font-weight: 700;
+}
+
+.feed_home {
+    overflow-y: scroll;
+    
 }
